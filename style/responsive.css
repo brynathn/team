@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .mockup_section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .text_section {
+        margin: 4rem;
+    }
+    
+    .image_section {
+        order: -1;
+    }
+}
