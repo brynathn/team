@@ -24,29 +24,47 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto gap-5">
-              <a class="text-light link-underline-light my-3" href="#"
-                >Product</a
-              >
-              <a class="text-light link-underline-light my-3" href="#">Blog</a>
-              <a class="text-light link-underline-light my-3" href="#"
-                >Support</a
-              >
-              <a class="text-light link-underline-light my-3" href="#"
-                >Log In</a
-              >
-              <a class="nav-link text-light px-5 py-3 getAcc" href="#"
-                >Get Access</a
-              >
+
+          <div
+            class="offcanvas offcanvas-end custom-offcanvas"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="navbar-nav ms-auto gap-5">
+                <a class="text-light link-underline-light my-3" href="#"
+                  >Product</a
+                >
+                <a class="text-light link-underline-light my-3" href="#"
+                  >Blog</a
+                >
+                <a class="text-light link-underline-light my-3" href="#"
+                  >Support</a
+                >
+                <a class="text-light link-underline-light my-3" href="#"
+                  >Log In</a
+                >
+                <a class="nav-link text-light px-5 py-3 getAcc" href="#"
+                  >Get Access</a
+                >
+              </div>
             </div>
           </div>
         </nav>
@@ -62,7 +80,7 @@
                 and track project progress.
               </p>
 
-              <div class="input-group">
+              <div class="input-group input-margin">
                 <input
                   type="email"
                   class="form-control me-2 col-8"
@@ -314,8 +332,8 @@
             <p class="small">Collaboration platform <br />for modern teams</p>
           </div>
           <div class="col-md-2">
-            <h5>Company</h5>
-            <ul class="list-unstyled">
+            <h5 class="pt-3">Company</h5>
+            <ul class="list-unstyled pt-2 small">
               <li>
                 <a href="#" class="text-light text-decoration-none">Product</a>
               </li>
@@ -328,8 +346,8 @@
             </ul>
           </div>
           <div class="col-md-2">
-            <h5>Features</h5>
-            <ul class="list-unstyled">
+            <h5 class="pt-3">Features</h5>
+            <ul class="list-unstyled pt-2 small">
               <li>
                 <a href="#" class="text-light text-decoration-none"
                   >Screen Sharing</a
@@ -353,8 +371,8 @@
             </ul>
           </div>
           <div class="col-md-2">
-            <h5>Contact Us</h5>
-            <ul class="list-unstyled">
+            <h5 class="pt-3">Contact Us</h5>
+            <ul class="list-unstyled pt-2 small">
               <li class="text-light">info@teamapp.com</li>
               <li class="text-light">1-800-200-300</li>
               <li class="text-light">
@@ -362,17 +380,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
-            <h5>Stay up to date</h5>
-            <p>Subscribe to our newseller</p>
+          <div class="col-md-3">
+            <h5 class="pt-3">Stay up to date</h5>
+            <p class="pt-2 small">Subscribe to our newseller</p>
             <form action="#">
-              <div class="input-footer">
-                <input
-                  type="email"
-                  class="form-control bg-secondary border-0 text-light"
-                  placeholder="Email"
-                />
-                <button type="submit" class="btn btn-primary">→</button>
+              <div class="input-group">
+                <input type="email" class="input-custom" placeholder="Email" />
+                <button type="submit" class="btn btn-custom">→</button>
               </div>
             </form>
           </div>

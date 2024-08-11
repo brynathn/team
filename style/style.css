@@ -19,12 +19,15 @@ nav .getAcc {
   border-radius: 5px;
 }
 
+.custom-offcanvas {
+  background-color: #232340;
+}
+
 .navbar-nav a {
   color: white;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect */
 .navbar-nav a:hover {
   color: #007bff;
   transform: scale(1.05);
@@ -42,7 +45,7 @@ nav .getAcc {
   margin-top: 16px;
 }
 
-.input-group {
+.input-margin {
   margin-top: 56px;
 }
 
@@ -85,7 +88,6 @@ nav .getAcc {
   margin-bottom: 6rem;
 }
 
-/* new */
 .rating_section {
   padding: 4rem;
 }
@@ -97,17 +99,6 @@ nav .getAcc {
 }
 
 .slider {
-  /* display: flex;
-  justify-content: space-around;
-  gap: 40px;
-  padding: 50px 0px;
-  transition: transform 0.3s ease-in-out;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 15px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none; */
   display: flex;
   gap: 40px;
   padding: 50px 0;
@@ -125,18 +116,9 @@ nav .getAcc {
 }
 
 .card {
-  /* min-width: 375px;
-  min-height: 430px;
-  background: #fff;
-  padding: 44px 33px;
-  box-shadow: 0px 16px 24px rgba(118, 118, 178, 0.24);
-  display: inline-block;
-  vertical-align: top;
-  scroll-snap-align: start; */
-
-  flex: 0 0 auto; /* Prevent cards from shrinking */
-  width: 100%; /* Make cards take full width of their container */
-  max-width: 375px; /* Ensure cards don’t grow too wide */
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 375px;
   min-height: 430px;
   background: #fff;
   padding: 44px 33px;
@@ -196,40 +178,33 @@ nav .getAcc {
 }
 
 .footer {
-    background-color: #232340;
-    color: #fff;
+  background-color: #232340;
+  color: #fff;
 }
 
 .footer h5 {
-    color: #5468E7;
+  color: #5468e7;
 }
 
-.footer .input-footer input {
-    background-color: #44476a;
-    border-radius: 0.25rem;
+.input-custom {
+  background-color: #F5F5F53D;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  width: 13rem;
 }
 
-.footer .input-footer button {
-    border-radius: 0.25rem;
+.btn-custom {
+  border-radius: 4px;
+  background-color: #F5F5F53D;
+  border: none;
 }
 
 .footer ul.list-unstyled li {
-  margin-bottom: 10px; /* Jarak antar elemen li */
+  margin-bottom: 10px;
 }
 
 .footer ul.list-unstyled li:last-child {
-  margin-bottom: 0; /* Menghapus margin bawah elemen terakhir */
+  margin-bottom: 0;
 }
-
-.footer ul.list-unstyled a {
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer ul.list-unstyled a:hover {
-  color: #6c63ff; /* Ubah warna teks pada hover */
-  transform: translateX(5px); /* Efek geser ke kanan */
-}
-
-
-
 
