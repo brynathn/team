@@ -40,7 +40,7 @@
             aria-labelledby="offcanvasRightLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+              <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">Menu</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -319,8 +319,13 @@
         </div>
       </div>
       <div class="container text-end">
-        <button type="button" class="prev">🠨</button>
-        <button type="button" class="next">🠪</button>
+        <a class="prev" href="javascript:void(0)" role="button" aria-label="Previous">
+          <img class="img-fluid" src="img/left.png" alt="Previous">
+        </a>
+
+        <a class="next" href="javascript:void(0)" role="button" aria-label="Next">
+          <img class="img-fluid" src="img/right.png" alt="Next">
+        </a>
       </div>
     </section>
 
