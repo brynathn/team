@@ -1,14 +1,45 @@
 @media (max-width: 768px) {
-    .mockup_section {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+  .mockup_section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .text_section {
+    padding: 4rem;
+  }
+
+  .first_info_text,
+  .scnd_info_text,
+  .third_info_text {
+    padding: 4rem;
+  }
+
+  .image_section {
+    order: -1;
+  }
+  .card {
+    width: 80%;
+  }
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section.newsletter input[type="email"] {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+    .footer-section h3 {
+        font-size: 16px;
     }
-    
-    .text_section {
-        margin: 4rem;
+
+    .footer-section.newsletter input[type="email"] {
+        width: 100%;
     }
-    
-    .image_section {
-        order: -1;
+
+    .footer-section.newsletter button {
+        width: 100%;
     }
 }
