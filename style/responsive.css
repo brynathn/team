@@ -17,29 +17,28 @@
   .image_section {
     order: -1;
   }
+
   .card {
     width: 80%;
   }
-  .footer-section {
-    text-align: center;
-  }
 
-  .footer-section.newsletter input[type="email"] {
-    width: 70%;
-    margin-bottom: 10px;
+  .input-custom {
+    max-width: 200px; /* Sesuaikan dengan lebar yang Anda inginkan */
   }
 }
 
 @media (max-width: 480px) {
-    .footer-section h3 {
-        font-size: 16px;
-    }
+  .input-margin input,
+  .input-margin button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-    .footer-section.newsletter input[type="email"] {
-        width: 100%;
-    }
+  .input-margin button {
+    margin-bottom: 0;
+  }
 
-    .footer-section.newsletter button {
-        width: 100%;
-    }
+  .input-margin input {
+    margin-right: 0;
+  }
 }

@@ -33,6 +33,14 @@ nav .getAcc {
   transform: scale(1.05);
 }
 
+.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .getAcc:hover {
   background-color: #5468e7;
 }
@@ -47,6 +55,10 @@ nav .getAcc {
 
 .input-margin {
   margin-top: 56px;
+}
+
+.input-margin input {
+  margin-right: 1rem;
 }
 
 .mockup_section {
@@ -109,6 +121,7 @@ nav .getAcc {
   transition: transform 0.3s ease-in-out;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
+  align-items: flex-start;
 }
 
 .slider::-webkit-scrollbar {
@@ -119,7 +132,8 @@ nav .getAcc {
   flex: 0 0 auto;
   width: 100%;
   max-width: 375px;
-  min-height: 430px;
+  height: auto; /* Pastikan tinggi otomatis */
+  min-height: auto; /* Hapus batasan minimum */
   background: #fff;
   padding: 44px 33px;
   box-shadow: 0px 16px 24px rgba(118, 118, 178, 0.24);
@@ -186,18 +200,42 @@ nav .getAcc {
   color: #5468e7;
 }
 
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff91;
+}
+
+.email-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .input-custom {
-  background-color: #F5F5F53D;
-  border-radius: 4px;
+  flex: 1;
+  background-color: #f5f5f53d;
+  border-radius: 4px 0 0 4px;
   color: #fff;
   border: none;
-  width: 13rem;
+  outline: none;
+  padding-left: 10px;
 }
 
 .btn-custom {
-  border-radius: 4px;
-  background-color: #F5F5F53D;
+  border-radius: 0 4px 4px 0;
+  background-color: #f5f5f53d;
   border: none;
+  outline: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #f5f5f578;
 }
 
 .footer ul.list-unstyled li {
@@ -207,4 +245,3 @@ nav .getAcc {
 .footer ul.list-unstyled li:last-child {
   margin-bottom: 0;
 }
-
